@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo vue project</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+
+    <main class="main_division" id="app">
+
+    <div class="main_container">
+
+      <form class="todo_form" @submit.prevent="addTodo" method="post">
+        <div class="form_division">
+          <input v-model="newTodo" class="todo_input" type="text" placeholder="Enter new todo">
+          <button class="todo_add_button" type="submit" name="button">Add</button>
+        </div>
+      </form>
+
+
+        <li class="added_list" :style="{'background':todo.background}" v-for="todo in todos">
+          <div class="list_division">
+            <span :style="{'text-decoration':todo.text_decoration}" id="list_span">{{ todo.title }}</span>
+            <input type="checkbox" class="list_checkbox" @change="todoDone(todo)">
+            <button class="remove_button" @click="removeTodo(todo)" type="button" name="button">Remove</button>
+          </div>
+        </li>
+
+    </div>
+
+    </main>
+
+    <script type="text/javascript" src="./app.js">
+
+    </script>
+
+  </body>
+</html>

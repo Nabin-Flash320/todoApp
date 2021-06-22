@@ -1,0 +1,106 @@
+
+
+body{
+  background: #5F5AF5;
+}
+
+.main_container{
+  background: #2C28AE;
+  border-radius: 10px;
+  border-radius: 4px double #CCCCCC;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form_division{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.todo_input{
+  margin-right: 25px;
+  margin-left: 20px;
+  width: 75%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.todo_input[type="text"]{
+  font-size: 25px;
+}
+
+.todo_add_button{
+  display: inline;
+  margin-left: 5px;
+  margin-right: 20px;
+  background-color: #7b38d8;
+  border-radius: 10px;
+  border-radius: 4px double #CCCCCC;
+  color: #EEEEEE;
+  font-size: 20px;
+  width: 25%;
+  cursor: pointer;
+}
+
+.added_list{
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border-radius: 4px double #CCCCCC;
+}
+
+
+.list_division{
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.list_division:hover{
+  border: 1px solid white;
+  box-shadow: 0 0 15px 10px lightblue;
+}
+
+#list_span{
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 90%;
+  height: 30px;
+  align-items: center;
+  font-size: 25px;
+}
+
+.list_checkbox{
+  width: 13%;
+  height: 30px;
+  margin-left: 10px;
+}
+
+
+.remove_button{
+  display: inline;
+  width: 20%;
+  margin-right: 20px;
+  background-color: #7b38d8;
+  border-radius: 10px;
+  border-radius: 4px double #CCCCCC;
+  color: #EEEEEE;
+  font-size: 20px;
+  cursor: pointer;
+}
