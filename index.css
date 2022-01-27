@@ -75,6 +75,7 @@ body{
 .list_division:hover{
   border: 1px solid white;
   box-shadow: 0 0 15px 10px lightblue;
+  cursor: pointer;
 }
 
 #list_span{
@@ -90,6 +91,7 @@ body{
   width: 13%;
   height: 30px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 
